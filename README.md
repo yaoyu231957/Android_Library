@@ -4,7 +4,7 @@
 #### 介绍
 简易安卓软件
 
-![输入图片说明](%E7%AE%A1%E7%90%86%E5%91%98%E9%A1%B5%E9%9D%A2.png)
+<img src="https://github.com/yaoyu231957/Android_Library/blob/main/%E5%9B%BE%E7%89%871.png?raw=true" alt="输入图片说明" style="zoom:50%;" />
 
 #### 软件架构
 软件架构说明
