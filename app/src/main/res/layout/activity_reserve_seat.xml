@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约图书馆座位"
+            android:textSize="24sp"
+            android:layout_gravity="center" />
+
+        <!-- 日期选择器 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择预约日期:" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 时间选择 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择预约时间段:" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_8_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00 - 10:00" />
+
+            <RadioButton
+                android:id="@+id/rb_10_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 - 12:00" />
+
+            <RadioButton
+                android:id="@+id/rb_12_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00 - 14:00" />
+
+            <RadioButton
+                android:id="@+id/rb_14_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:00 - 16:00" />
+
+            <RadioButton
+                android:id="@+id/rb_16_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00 - 18:00" />
+
+            <RadioButton
+                android:id="@+id/rb_18_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:00 - 20:00" />
+        </RadioGroup>
+
+        <!-- 显示剩余座位数 -->
+        <TextView
+            android:id="@+id/tv_remaining_seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余座位数：请选择时间段"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_seat_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <!-- 预约按钮 -->
+        <Button
+            android:id="@+id/btn_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="预约" />
+
+        <!-- 查看预约按钮 -->
+        <Button
+            android:id="@+id/btn_view_reservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看已有预约" />
+
+        <!-- 显示预约信息 -->
+        <TextView
+            android:id="@+id/tv_reservation_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+</ScrollView>
